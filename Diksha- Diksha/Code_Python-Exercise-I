@@ -1,0 +1,11 @@
+#input text
+text = 'This is Python-Exercise-I'
+
+# making it case insensitive
+text = text.casefold()
+
+# counting the no of vowels
+count = {n:sum([1 for char in text if char == n]) for n in 'aeiou'}
+
+# printing the no of vowels in input sentence
+print(count)
